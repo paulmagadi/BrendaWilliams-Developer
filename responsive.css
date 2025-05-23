@@ -191,7 +191,7 @@
     }
 
     .language {
-        width: 100%;
+        width: 45%;
     }
 
     .profile-image img {
@@ -207,7 +207,7 @@
     }
 
     .socials {
-        gap: .2em;
-        font-size: 1rem;
+        gap: 10px;
+        font-size: 1.2rem;
     }
 }

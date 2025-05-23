@@ -8,17 +8,25 @@ document.addEventListener('DOMContentLoaded', function () {
     toggleBtn.addEventListener('click', function () {
         sidebar.classList.toggle('collapsed');
 
-        // Optional: Save state in localStorage
         if (sidebar.classList.contains('collapsed')) {
             toggleBtn.innerHTML = '<i class="fas fa-bars"></i><i class="fa-solid fa-chevron-right"></i>';
+            toggleBtn.title = "Open";
             localStorage.setItem('sidebarCollapsed', 'true');
         } else {
             toggleBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i><i class="fas fa-bars"></i>'
+            toggleBtn.title = "Close";
             localStorage.setItem('sidebarCollapsed', 'false');
         }
     });
 
-    // Optional: Load saved state
+    if (sidebar.classList.contains('collapsed')) {
+        toggleBtn.innerHTML = '<i class="fas fa-bars"></i><i class="fa-solid fa-chevron-right"></i>';
+        toggleBtn.title = "Open";
+    } else {
+        toggleBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i><i class="fas fa-bars"></i>'
+        toggleBtn.title = "Close";
+    }
+
     if (localStorage.getItem('sidebarCollapsed') === 'true') {
         sidebar.classList.add('collapsed');
     }
