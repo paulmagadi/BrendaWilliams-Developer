@@ -1,7 +1,31 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.getElementById('toggleBtn');
+    const sidebar = document.getElementById('sidebar');
+    const mainContent = document.getElementById('mainContent');
+
+    toggleBtn.addEventListener('click', function () {
+        sidebar.classList.toggle('collapsed');
+
+        // Optional: Save state in localStorage
+        if (sidebar.classList.contains('collapsed')) {
+            localStorage.setItem('sidebarCollapsed', 'true');
+        } else {
+            localStorage.setItem('sidebarCollapsed', 'false');
+        }
+    });
+
+    // Optional: Load saved state
+    if (localStorage.getItem('sidebarCollapsed') === 'true') {
+        sidebar.classList.add('collapsed');
+    }
+});
+
+
 
 menuBar = document.querySelector('.menu-bar');
 sideBar = document.querySelector('.sidebar');
 exitSidebarBtn = document.querySelector('.exit-sidebar');
+
 
 // Toggle sidebar 
 menuBar.addEventListener('click', function() {

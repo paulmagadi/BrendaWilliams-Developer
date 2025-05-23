@@ -4,96 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brenda Williams</title>
+    <title>Brenda Williams - Web Developer</title>
     <meta name="description" content="This is a personal portfolio html template">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/svg+xml">
 
-    <!-- Font awesome cdn -->
+    <!-- Google fonts cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oleo+Script:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <script src="https://kit.fontawesome.com/3ba6ff19b2.js" crossorigin="anonymous"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-
-
     <div class="container">
+
+        <!-- Header section  -->
         <header>
             <div class="header">
                 <div class="menu-bar">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        fill="#5f6368">
-                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                    </svg>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
                 <div>
                 </div>
                 <div class="title name-title">
-                    <a href="#"><span>Brenda</span></a>
+                    <a href="index.html"><span>Brenda</span></a>
                 </div>
             </div>
         </header>
-        <div class="sidebar">
-            <div class="title sidebar-title">
-                <a href="#"><span title="Brenda Williams">Brenda</span></a>
-            </div>
-            <div class="exit-sidebar">&#10006;</div>
+
+        <!-- Sidebar section  -->
+        <div class="sidebar" id="sidebar">
+            <p class="toggle-btn" id="toggleBtn">
+                <i class="fas fa-bars"></i>
+            </p>
+            <div class="exit-sidebar"><i class="fa-solid fa-x"></i></div>
             <nav>
                 <ul>
                     <li class="menu active" id="profile-btn" title="Profile section">
-                        <a href="#profile-section">
-                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                    viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                                    <path
-                                        d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
-                                </svg></span>
-                            Profile
-                        </a>
+                        <a href="#profile-section"><i class="fa-regular fa-user"></i><span
+                                class="menu-text">Profile</span></a>
                     </li>
                     <li class="menu" id="expertise-btn" title="Expertise section">
-                        <a href="#expertise-section">
-                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                    viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                                    <path
-                                        d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
-                                </svg></span>
-                            Expertise
-                        </a>
+                        <a href="#expertise-section"><i class="fa-solid fa-code"></i><span
+                                class="menu-text">Expertise</span></a>
                     </li>
                     <li class="menu" id="projects-btn" title="Projects section">
-                        <a href="#projects-section">
-                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                    viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                                    <path
-                                        d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z" />
-                                </svg></span>
-                            Projects
-                        </a>
+                        <a href="#projects-section"><i class="fa-solid fa-bars-progress"></i><span
+                                class="menu-text">Projects</span></a>
                     </li>
                     <li class="menu" id="contact-btn" title="Contact section">
-                        <a href="#contact-section">
-                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                    viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                                    <path
-                                        d="M160-40v-80h640v80H160Zm0-800v-80h640v80H160Zm320 400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm70-80q45-56 109-88t141-32q77 0 141 32t109 88h70v-480H160v480h70Zm118 0h264q-29-20-62.5-30T480-280q-36 0-69.5 10T348-240Zm132-280q-17 0-28.5-11.5T440-560q0-17 11.5-28.5T480-600q17 0 28.5 11.5T520-560q0 17-11.5 28.5T480-520Zm0 40Z" />
-                                </svg></span>
-                            Contact
-                        </a>
+                        <a href="#contact-section"><i class="fa-regular fa-address-card"></i><span
+                                class="menu-text">Expertise</span></a>
                     </li>
                 </ul>
             </nav>
         </div>
+
+        <!-- content section -->
 
         <div class="content-container">
             <div class="content">
@@ -119,7 +98,7 @@
 
                             <div class="profile-image mobile-profile-image">
                                 <p style="color: white;" class="name">Brenda - Web Developer</p>
-                                <img src="images/brenda.jpg" alt="paul">
+                                <img src="images/brenda.jpg" alt="brenda williams">
                                 <div class="socials" style="color: white;">
                                     <i class="fa fa-github" aria-hidden="true"></i>
                                     <i class="fa fa-linkedin" aria-hidden="true"></i>
@@ -127,12 +106,6 @@
                                     <i class="fa-brands fa-x-twitter"></i>
                                     <i class="fa fa-instagram" aria-hidden="true"></i>
                                 </div>
-                                <p class="whatsapp">
-                                    <a aria-label="Chat on WhatsApp" href="https://wa.me/+254700817233" target="_blank"
-                                        title="Chat on WhatsApp"> <img alt="Chat on WhatsApp"
-                                            src="images/WhatsAppButtonWhiteSmall.svg" />
-                                        <a />
-                                </p>
                             </div>
                         </div>
                         <br><br>
@@ -150,7 +123,7 @@
                                     <p>JavaScript</p>
                                 </div>
                                 <div class="language">
-                                    <p>MYSQL/PostgreSQL</p>
+                                    <p>MySQL/PostgreSQL</p>
                                 </div>
                                 <div class="language">
                                     <p>HTML/CSS</p>
@@ -191,7 +164,6 @@
                             <div class="expertise-box">
                                 <div class="icons">
                                     <ion-icon name="phone-portrait-outline" aria-hidden="true"></ion-icon>
-                                    <!-- <ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon> -->
                                 </div>
                                 <div class="expertise-title">
                                     <h3>Mobile Design</h3>
@@ -432,7 +404,7 @@
                     <p>
                         Copyright &copy;
                         <script>document.write(new Date().getFullYear())</script><span> <a
-                                href="https//http://github.com/paul.github" title="Visit github"
+                                href="https://paulmagadi.github.io" title="Lets get talk"
                                 class="name">paulsqmagadi</a></span>
                     </p>
                 </div>
@@ -448,19 +420,11 @@
                     <i class="fa-brands fa-x-twitter" title="X-twitter"></i>
                     <i class="fa fa-instagram" aria-hidden="true" title="Instagram"></i>
                 </div>
-                <p class="whatsapp">
-                    <a aria-label="Chat on WhatsApp" href="https://wa.me/+254700817233" target="_blank"
-                        title="Chat on WhatsApp"> <img alt="Chat on WhatsApp"
-                            src="images/WhatsAppButtonWhiteSmall.svg" />
-                        <a />
-                </p>
             </div>
         </div>
+
     </div>
-
-    <a href="#" class="back-to-top" title="Scroll to top">&UpArrowBar;</a>
-
-    <script src="scripts.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
