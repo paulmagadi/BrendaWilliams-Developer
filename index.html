@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenda Williams</title>
+    <meta name="description" content="This is a personal portfolio html template">
+
+    <!-- Font awesome cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oleo+Script:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3ba6ff19b2.js" crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="menu-bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#5f6368">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </div>
+                <div>
+                </div>
+                <div class="title name-title">
+                    <a href="#"><span>Brenda</span></a>
+                </div>
+            </div>
+        </header>
+        <div class="sidebar">
+            <div class="title sidebar-title">
+                <a href="#"><span title="Brenda Williams">Brenda</span></a>
+            </div>
+            <div class="exit-sidebar">&#10006;</div>
+            <nav>
+                <ul>
+                    <li class="menu active" id="profile-btn" title="Profile section">
+                        <a href="#profile-section">
+                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                    viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                    <path
+                                        d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+                                </svg></span>
+                            Profile
+                        </a>
+                    </li>
+                    <li class="menu" id="expertise-btn" title="Expertise section">
+                        <a href="#expertise-section">
+                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                    viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                    <path
+                                        d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
+                                </svg></span>
+                            Expertise
+                        </a>
+                    </li>
+                    <li class="menu" id="projects-btn" title="Projects section">
+                        <a href="#projects-section">
+                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                    viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                    <path
+                                        d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z" />
+                                </svg></span>
+                            Projects
+                        </a>
+                    </li>
+                    <li class="menu" id="contact-btn" title="Contact section">
+                        <a href="#contact-section">
+                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                    viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                    <path
+                                        d="M160-40v-80h640v80H160Zm0-800v-80h640v80H160Zm320 400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm70-80q45-56 109-88t141-32q77 0 141 32t109 88h70v-480H160v480h70Zm118 0h264q-29-20-62.5-30T480-280q-36 0-69.5 10T348-240Zm132-280q-17 0-28.5-11.5T440-560q0-17 11.5-28.5T480-600q17 0 28.5 11.5T520-560q0 17-11.5 28.5T480-520Zm0 40Z" />
+                                </svg></span>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content-container">
+            <div class="content">
+                <section id="profile-section">
+                    <div class="profile">
+                        <div class="profile-lead">
+                            <div class="profile-info">
+                                <p>Hello, my name is <span class="name"><strong>Brenda Williams</strong></span></p><br>
+                                <p>I am a <span class="name"><strong>Web Developer</strong></span></p><br>
+                                <p>I have over 3 years of experience in developing a wide range of websites and mobile
+                                    applications. My expertise spans from creating dynamic ecommerce platforms to
+                                    crafting sleek landing pages, corporate websites, and personalized profiles.</p>
+
+                                <br>
+                                <div class="resume">
+                                    <a href="images/paulsqmagadi@gmail.com.pdf" target="_blank"
+                                        title="Download CV"><button type="button">Resume</button></a>
+                                    <a href="#projects-section" title="Recent Projects"><button
+                                            type="button">Portfolio</button></a>
+                                </div>
+                            </div>
+
+
+                            <div class="profile-image mobile-profile-image">
+                                <p style="color: white;" class="name">Brenda - Web Developer</p>
+                                <img src="images/brenda.jpg" alt="paul">
+                                <div class="socials" style="color: white;">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </div>
+                                <p class="whatsapp">
+                                    <a aria-label="Chat on WhatsApp" href="https://wa.me/+254700817233" target="_blank"
+                                        title="Chat on WhatsApp"> <img alt="Chat on WhatsApp"
+                                            src="images/WhatsAppButtonWhiteSmall.svg" />
+                                        <a />
+                                </p>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="tech-stack">
+                            <h2 class="section-heading">Tech Stack</h2>
+                            <br>
+                            <div class="languages">
+                                <div class="language">
+                                    <p>Python/Django</p>
+                                </div>
+                                <div class="language">
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="language">
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="language">
+                                    <p>MYSQL/PostgreSQL</p>
+                                </div>
+                                <div class="language">
+                                    <p>HTML/CSS</p>
+                                </div>
+                                <div class="language">
+                                    <p>React</p>
+                                </div>
+                                <div class="language">
+                                    <p>Figma</p>
+                                </div>
+                                <div class="language">
+                                    <p>Flutter</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <a href="#contact-section"><button type="button">Contact</button></a>
+                    </div>
+                </section>
+                <br><br>
+                <section id="expertise-section">
+                    <div class="expertise">
+                        <h2 class="section-heading">Expertise</h2>
+                        <br>
+                        <div class="expertise-container">
+                            <div class="expertise-box">
+                                <div class="icons">
+                                    <ion-icon name="laptop-outline" aria-hidden="true"></ion-icon>
+                                </div>
+                                <div class="expertise-title">
+                                    <h3>Web Development</h3>
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repudiandae odit ex
+                                        dicta vitae nihil dolorum temporibus maxime exercitationem non.</p>
+                                </div>
+                            </div>
+                            <div class="expertise-box">
+                                <div class="icons">
+                                    <ion-icon name="phone-portrait-outline" aria-hidden="true"></ion-icon>
+                                    <!-- <ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon> -->
+                                </div>
+                                <div class="expertise-title">
+                                    <h3>Mobile Design</h3>
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repudiandae odit ex
+                                        dicta vitae nihil dolorum temporibus maxime exercitationem non.</p>
+                                </div>
+                            </div>
+                            <div class="expertise-box">
+                                <div class="icons">
+                                    <ion-icon name="shapes-outline" aria-hidden="true"></ion-icon>
+                                </div>
+                                <div class="expertise-title">
+                                    <h3>Web Design</h3>
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repudiandae odit ex
+                                        dicta vitae nihil dolorum temporibus maxime exercitationem non.</p>
+                                </div>
+                            </div>
+                            <div class="expertise-box">
+                                <div class="icons">
+                                    <ion-icon name="stats-chart-outline" aria-hidden="true"></ion-icon>
+                                </div>
+                                <div class="expertise-title">
+                                    <h3>SEO Marketing</h3>
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repudiandae odit ex
+                                        dicta vitae nihil dolorum temporibus maxime exercitationem non.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <a href="#contact-section" title="Contact me"><button type="button">Contact</button></a>
+                    </div>
+                </section>
+                <br><br>
+                <section id="projects-section">
+                    <div class="projects">
+                        <h2 class="section-heading">Projects</h2>
+                        <div class="project-menu-container">
+                            <ul>
+                                <li class="project-menu active-project" data-category="all" title="All Projects"><a
+                                        href="#projects">All</a></li>
+                                <li class="project-menu" data-category="webDesign" title="Web Design Projects"><a
+                                        href="#projects">Web Design</a></li>
+                                <li class="project-menu" data-category="webDev" title="Web Developemt Projects"><a
+                                        href="#projects">Web Developemt</a></li>
+                                <li class="project-menu" data-category="appDesign" title="App Design Projects"><a
+                                        href="#projects">App Design</a></li>
+                                <li class="project-menu" data-category="appDev" title="App Development Projects"><a
+                                        href="#projects">App Development</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="projects-container">
+                            <div class="project-box web-design">
+                                <div class="project-image">
+                                    <a href="images/project-1.jpg" target="_blank" title="View Project">
+                                        <img src="images/project-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="project-description">
+                                    <h4 class="project-title">Project 1</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, vel
+                                        sapiente. Animi culpa voluptatibus fuga ratione quis, provident nobis tempore
+                                    </p>
+                                    <br>
+                                    <a href="images/project-1.jpg" target="_blank" title="View Project"><button
+                                            type="button">View</button></a> &nbsp;&nbsp;
+                                    <a href="images/project-1.jpg" target="_blank" title="View Source Code"><button
+                                            type="button">Code</button></a>
+                                </div>
+
+                            </div>
+                            <div class="project-box web-dev">
+                                <div class="project-image">
+                                    <a href="images/project-2.png" target="_blank" title="View Project">
+                                        <img src="images/project-2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="project-description">
+                                    <h4 class="project-title">Project 2</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, vel
+                                        sapiente. Animi culpa voluptatibus fuga ratione quis, provident nobis tempore
+                                    </p>
+                                    <br>
+                                    <a href="images/project-2.png" target="_blank" title="View Project"><button
+                                            type="button">View</button></a> &nbsp;&nbsp;
+                                    <a href="images/project-2.png" target="_blank" title="View Source Code"><button
+                                            type="button">Code</button></a>
+                                </div>
+
+                            </div>
+                            <div class="project-box app-design">
+                                <div class="project-image">
+                                    <a href="images/project-3.jpg" target="_blank" title="View Project">
+                                        <img src="images/project-3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="project-description">
+                                    <h4 class="project-title">Project 3</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, vel
+                                        sapiente. Animi culpa voluptatibus fuga ratione quis, provident nobis tempore
+                                    </p>
+                                    <br>
+                                    <a href="images/project-3.jpg" target="_blank" title="View Project"><button
+                                            type="button">View</button></a> &nbsp;&nbsp;
+                                    <a href="images/project-3.jpg" target="_blank" title="View Source Code"><button
+                                            type="button">Code</button></a>
+                                </div>
+
+                            </div>
+                            <div class="project-box app-dev">
+                                <div class="project-image">
+                                    <a href="images/project-4.png" target="_blank" title="View Project">
+                                        <img src="images/project-4.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="project-description">
+                                    <h4 class="project-title">Project 4</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, vel
+                                        sapiente. Animi culpa voluptatibus fuga ratione quis, provident nobis tempore
+                                    </p>
+                                    <br>
+                                    <a href="images/project-4.png" target="_blank" title="View Project"><button
+                                            type="button">View</button></a> &nbsp;&nbsp;
+                                    <a href="images/project-4.png" target="_blank" title="View Source Code"><button
+                                            type="button">Code</button></a>
+                                </div>
+
+                            </div>
+
+                            <div class="project-box web-design">
+                                <div class="project-image">
+                                    <a href="images/project-5.png" target="_blank" title="View Project">
+                                        <img src="images/project-5.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="project-description">
+                                    <h4 class="project-title">Project 5</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, vel
+                                        sapiente. Animi culpa voluptatibus fuga ratione quis, provident nobis tempore
+                                    </p>
+                                    <br>
+                                    <a href="images/project-5.png" target="_blank" title="View Project"><button
+                                            type="button">View</button></a> &nbsp;&nbsp;
+                                    <a href="images/project-5.png" target="_blank" title="View Source Code"><button
+                                            type="button">Code</button></a>
+                                </div>
+
+                            </div>
+                            <div class="project-box web-dev">
+                                <div class="project-image">
+                                    <a href="images/project-6.png" target="_blank" title="View Project">
+                                        <img src="images/project-6.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="project-description">
+                                    <h4 class="project-title">Project 6</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, vel
+                                        sapiente. Animi culpa voluptatibus fuga ratione quis, provident nobis tempore
+                                    </p>
+                                    <br>
+                                    <a href="images/project-6.png" target="_blank" title="View Project"><button
+                                            type="button">View</button></a> &nbsp;&nbsp;
+                                    <a href="images/project-6.png" target="_blank" title="View Source Code"><button
+                                            type="button">Code</button></a>
+                                </div>
+
+                            </div>
+                            <div class="project-box app-design">
+                                <div class="project-image">
+                                    <a href="images/project-7.png" target="_blank" title="View Project">
+                                        <img src="images/project-7.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="project-description">
+                                    <h4 class="project-title">Project 7</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, vel
+                                        sapiente. Animi culpa voluptatibus fuga ratione quis, provident nobis tempore
+                                    </p>
+                                    <br>
+                                    <a href="images/project-7.png" target="_blank" title="View Project"><button
+                                            type="button">View</button></a> &nbsp;&nbsp;
+                                    <a href="images/project-7.png" target="_blank" title="View Source Code"><button
+                                            type="button">Code</button></a>
+                                </div>
+
+                            </div>
+                            <div class="project-box app-dev">
+                                <div class="project-image">
+                                    <a href="images/project-8.jpg" target="_blank" title="View Project">
+                                        <img src="images/project-8.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="project-description">
+                                    <h4 class="project-title">Project 8</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, vel
+                                        sapiente. Animi culpa voluptatibus fuga ratione quis, provident nobis tempore
+                                    </p>
+                                    <br>
+                                    <a href="images/project-8.jpg" target="_blank" title="View Project"><button
+                                            type="button">View</button></a> &nbsp;&nbsp;
+                                    <a href="images/project-8.jpg" target="_blank" title="View Source Code"><button
+                                            type="button">Code</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <a href="#contact-section" title="Contact me"><button type="button">Contact</button></a>
+                    </div>
+                </section>
+                <br><br>
+                <section id="contact-section">
+                    <div class="contact">
+                        <h3 class="section-heading">Contact me</h3>
+                        <div class="contact-container">
+                            <div class="contact-form">
+                                <form action="">
+                                    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                                    <input type="email" id="email" name="email" placeholder="Email" required>
+
+                                    <textarea id="message" name="message" placeholder="Your message"
+                                        style="height:120px" required></textarea>
+
+                                    <input type="submit" value="Send" title="Send Message">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br><br>
+                <div class="footer-content">
+                    <p>
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear())</script><span> <a
+                                href="https//http://github.com/paul.github" title="Visit github"
+                                class="name">paulsqmagadi</a></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="profile-image desktop-profile-image">
+                <p class="name">Brenda - Web Developer</p>
+                <img src="images/brenda.jpg" alt="paul" title="Brenda Williams">
+                <div class="socials">
+                    <i class="fa fa-github" aria-hidden="true" title="Github"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true" title="Linkedin"></i>
+                    <i class="fa fa-facebook" aria-hidden="true" title="Facebook"></i>
+                    <i class="fa-brands fa-x-twitter" title="X-twitter"></i>
+                    <i class="fa fa-instagram" aria-hidden="true" title="Instagram"></i>
+                </div>
+                <p class="whatsapp">
+                    <a aria-label="Chat on WhatsApp" href="https://wa.me/+254700817233" target="_blank"
+                        title="Chat on WhatsApp"> <img alt="Chat on WhatsApp"
+                            src="images/WhatsAppButtonWhiteSmall.svg" />
+                        <a />
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top" title="Scroll to top">&UpArrowBar;</a>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
