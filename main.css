@@ -84,14 +84,34 @@ header {
     z-index: 100;
 }
 
+header .menu-bar i {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.title span {
+    padding: .1em .5em;
+    background:
+        linear-gradient(to right, var(--primary-color) 2px, transparent 2px) 0 100%,
+        linear-gradient(to left, var(--primary-color) 2px, transparent 2px) 100% 0,
+        linear-gradient(to bottom, var(--primary-color) 2px, transparent 2px) 100% 0,
+        linear-gradient(to top, var(--primary-color) 2px, transparent 2px) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    font-size: 2rem;
+    font-family: "Lobster", serif;
+    border-radius: 5px;
+}
+
+
+/* Sidebar section */
 .sidebar {
-    width: 15em;
-    background: var(--bg-gradient-2);
+    width: 15rem;
+    background: var(--dark-color);
     position: fixed;
     height: 100%;
     transition: all 0.3s;
 }
-
 
 .exit-sidebar {
     display: none;
@@ -115,11 +135,6 @@ nav {
 nav ul {
     list-style: none;
 }
-
-nav li {
-    background: var(--dark-color);
-}
-
 
 nav li:hover {
     background-color: var(--shadow-color);
@@ -156,19 +171,18 @@ a {
 .toggle-btn {
     background: none;
     border: none;
-    color: white;
+    color: rgb(252, 252, 252);
     font-size: 1.5rem;
     padding: 15px;
     cursor: pointer;
     width: 100%;
-    text-align: left;
+    text-align: right;
 }
 
 .sidebar.collapsed .toggle-btn {
     text-align: center;
     padding: 15px 0;
 }
-
 
 .content-container {
     margin-left: 15em;
@@ -185,14 +199,9 @@ a {
     margin-left: 60px;
 }
 
-
 .content {
-    width: 67%;
+    width: calc(100% - 20rem);
     padding: 0 1em;
-}
-
-.sidebar.collapsed+.content {
-    width: 100%;
 }
 
 .name {
@@ -491,16 +500,18 @@ input[type=submit]:hover {
 }
 
 .desktop-profile-image {
-    width: 20em;
+    width: 20rem;
     min-height: 100vh;
     position: fixed;
     right: 0;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: var(--bg-gradient-2);
 }
+
 
 .desktop-profile-image .name {
     color: var(--text-color);
@@ -532,14 +543,6 @@ input[type=submit]:hover {
     100% {
         transform: translateY(0);
     }
-}
-
-.whatsapp img {
-    background: none;
-}
-
-.whatsapp img:hover {
-    transform: scale(1.03);
 }
 
 .socials {

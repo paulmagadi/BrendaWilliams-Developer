@@ -1,3 +1,5 @@
+let sidebarLocked = false; 
+
 document.addEventListener('DOMContentLoaded', function () {
     const toggleBtn = document.getElementById('toggleBtn');
     const sidebar = document.getElementById('sidebar');
@@ -8,8 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Optional: Save state in localStorage
         if (sidebar.classList.contains('collapsed')) {
+            toggleBtn.innerHTML = '<i class="fas fa-bars"></i><i class="fa-solid fa-chevron-right"></i>';
             localStorage.setItem('sidebarCollapsed', 'true');
         } else {
+            toggleBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i><i class="fas fa-bars"></i>'
             localStorage.setItem('sidebarCollapsed', 'false');
         }
     });

@@ -24,12 +24,28 @@
         z-index: 100;
     }
 
+    .toggle-btn {
+        display: none;
+    }
+
+    .sidebar.collapsed {
+        width: 15rem;
+    }
+
+    .sidebar.collapsed .menu-text {
+        opacity: 1;
+        width: auto;
+        height: auto;
+        overflow: auto;
+    }
+
     .sidebar {
         background: var(--bg-gradient);
         left: -100%;
         width: 50%;
         height: 100%;
         transition: left 0.3s ease;
+        z-index: 1000;
     }
 
     .sidebar.open {
@@ -47,6 +63,10 @@
     .content-container {
         margin-left: 0;
         margin-top: 6em;
+    }
+
+    .sidebar.collapsed+.content-container {
+        margin-left: 0;
     }
 
     .content {
@@ -120,6 +140,9 @@
 
     .contact-modal {
         width: 80%;
+    }
+    footer {
+        margin: 0 1em;
     }
 }
 
